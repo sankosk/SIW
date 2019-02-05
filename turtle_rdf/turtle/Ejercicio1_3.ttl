@@ -1,0 +1,23 @@
+#The New York Times reported that John McCarthy died.
+#He invented the programming language LISP
+
+@base <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix wdprop: <https://www.wikidata.org/wiki/Property:>
+
+#NewYorkTimes   inform/report   Dead person
+wikidata:Q9684  <InformAction>  wikidata:Q18093576 ;
+  <name> "The New York Times" ;
+  rdf:type <NewsMediaOrganization> .
+
+#John McCarthy  is        dead person
+wikidata:Q92739 rdf:type  wikidata:Q18093576 ;
+  <givenName> "John" ;
+  <familyName>  "McCarthy" ;
+  #is creator of  lisp programming language
+  <creator> wikidata:Q132874 .
+
+wikidata:Q132874 <name> "Lisp" ;
+  rdf:type  <CreativeWork> ;
+  rdf:type  <ComputerLanguage> .

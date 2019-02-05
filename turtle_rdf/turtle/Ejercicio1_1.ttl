@@ -1,0 +1,13 @@
+# Miles Davis was an american jazz musician
+
+@base <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wikidata: <http://www.wikidata.org/wiki/> .
+@prefix wdprop: <http://www.wikidata.org/wiki/Property:>
+
+#Miles Davis    occupation  jazz musician
+wikidata:Q93341 wdprop:P106 wikidata:Q15981151 ;
+#               country     United States of America
+                wdprop:P27  wikidata:Q30 ;
+                <givenName> "Miles" ;
+                <familyName> "Davis" .
